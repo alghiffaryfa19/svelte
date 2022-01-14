@@ -23,7 +23,6 @@
 </script>
 <script>
 	export let post;
-	console.log(post)
 	const initializeRemarkable = () => {
 		(function() {
 			// VARIABLES
