@@ -3,6 +3,17 @@
 	import Quotes from "$lib/Quotes.svelte";
 	import Footer from "$lib/Footer.svelte";
     import PageTransitions from "$lib/PageTransitions.svelte";
+
+    export async function load({ fetch }) {
+      const [quotes] = await Promise.all([
+        fetch(`https://pusatprestasinasional.kemdikbud.go.id/labs/api/quote-of-the-day`),
+      ]);
+      return {
+        props: {
+            quotes: await quotes.json()
+        },
+      };
+    }
     
 </script>
 <script>
@@ -43,7 +54,7 @@
 
     changePage({ page: 1 });
     
-    
+    export let quotes
 </script>
 <svelte:head>	
 	<title>Wara - Wara Prestasi | Puspresnas</title>	
@@ -104,6 +115,6 @@
         
     </div>
 </section>
-<Quotes/>
+<Quotes {quotes}/>
 </PageTransitions>
 <Footer/>
