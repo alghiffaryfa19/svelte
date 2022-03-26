@@ -1,13 +1,13 @@
-import adapter from '@sveltejs/adapter-auto';
-
-/** @type {import('@sveltejs/kit').Config} */
-const config = {
+const adapter = require('@sveltejs/adapter-netlify');
+module.exports = {
 	kit: {
-		adapter: adapter(),
-
-		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte'
+		adapter: adapter(), // currently the adapter does not take any options
+		target: '#svelte',
+		prerender: {
+			crawl: true,
+			enabled: true,
+			force: true,
+			pages: ['*'],
+		},
 	}
 };
-
-export default config;
