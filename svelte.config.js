@@ -1,4 +1,5 @@
-import adapter from '@sveltejs/adapter-netlify';
+import adapter from '@sveltejs/adapter-node';
+
 
 export default {
 	kit: {
