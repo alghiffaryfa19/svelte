@@ -17,19 +17,19 @@
 
     export async function load({ fetch }) {
       const [slider, latestVideo, jenjang, service, journey, category, news, topNews, kabar, quotes, poster, video, visitor] = await Promise.all([
-        fetch(`https://pusatprestasinasional.kemdikbud.go.id/labs/api/slider`),
-        fetch(`https://pusatprestasinasional.kemdikbud.go.id/labs/api/latest-video`),
-        fetch(`https://pusatprestasinasional.kemdikbud.go.id/labs/api/jenjang`),
-        fetch(`https://pusatprestasinasional.kemdikbud.go.id/labs/api/service`),
-        fetch(`https://pusatprestasinasional.kemdikbud.go.id/labs/api/journey`),
-        fetch(`https://pusatprestasinasional.kemdikbud.go.id/labs/api/event-kategori`),
-        fetch(`https://pusatprestasinasional.kemdikbud.go.id/labs/api/landing-news`),
-        fetch(`https://pusatprestasinasional.kemdikbud.go.id/labs/api/top-news`),
-        fetch(`https://pusatprestasinasional.kemdikbud.go.id/labs/api/kabar-prestasi`),
-        fetch(`https://pusatprestasinasional.kemdikbud.go.id/labs/api/quote-of-the-day`),
-        fetch(`https://pusatprestasinasional.kemdikbud.go.id/labs/api/poster`),
-        fetch(`https://pusatprestasinasional.kemdikbud.go.id/labs/api/video`),
-        fetch(`https://pusatprestasinasional.kemdikbud.go.id/labs/api/visitor`),
+        fetch(`https://data-pusatprestasinasional.kemdikbud.go.id/api/slider`),
+        fetch(`https://data-pusatprestasinasional.kemdikbud.go.id/api/latest-video`),
+        fetch(`https://data-pusatprestasinasional.kemdikbud.go.id/api/jenjang`),
+        fetch(`https://data-pusatprestasinasional.kemdikbud.go.id/api/service`),
+        fetch(`https://data-pusatprestasinasional.kemdikbud.go.id/api/journey`),
+        fetch(`https://data-pusatprestasinasional.kemdikbud.go.id/api/event-kategori`),
+        fetch(`https://data-pusatprestasinasional.kemdikbud.go.id/api/landing-news`),
+        fetch(`https://data-pusatprestasinasional.kemdikbud.go.id/api/top-news`),
+        fetch(`https://data-pusatprestasinasional.kemdikbud.go.id/api/kabar-prestasi`),
+        fetch(`https://data-pusatprestasinasional.kemdikbud.go.id/api/quote-of-the-day`),
+        fetch(`https://data-pusatprestasinasional.kemdikbud.go.id/api/poster`),
+        fetch(`https://data-pusatprestasinasional.kemdikbud.go.id/api/video`),
+        fetch(`https://data-pusatprestasinasional.kemdikbud.go.id/api/visitor`),
       ]);
       return {
         props: {

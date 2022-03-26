@@ -6,7 +6,7 @@
 
     export async function load({ fetch }) {
       const [quotes] = await Promise.all([
-        fetch(`https://pusatprestasinasional.kemdikbud.go.id/labs/api/quote-of-the-day`),
+        fetch(`https://data-pusatprestasinasional.kemdikbud.go.id/api/quote-of-the-day`),
       ]);
       return {
         props: {
@@ -31,7 +31,7 @@
     let loading = true;
     import axios from 'axios';
     function changePage(params) {
-        axios.get('https://pusatprestasinasional.kemdikbud.go.id/labs/api/news', {
+        axios.get('https://data-pusatprestasinasional.kemdikbud.go.id/api/news', {
         params: params
         })
         .then(function (response) {

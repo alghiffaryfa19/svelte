@@ -1,6 +1,6 @@
 <script>
     import { onMount } from "svelte";
-    const apiURL = "https://pusatprestasinasional.kemdikbud.go.id/labs/api/service";
+    const apiURL = "https://data-pusatprestasinasional.kemdikbud.go.id/api/service";
     let data = [];
     onMount(async function() {
         const response = await fetch(apiURL);
@@ -51,8 +51,8 @@
 					  <a class="dropdown-item" href="/profil/wawasan-umum-dan-misi">Wawasan Umum dan Misi </a>	
 					  <a class="dropdown-item" href="/profil/filosofi-organisasi">Filosofi Organisasi </a>
 					  <a class="dropdown-item" href="/profil/struktur-organisasi">Struktur Organisasi </a>
-					  <a class="dropdown-item" target="_blank" href="https://pusatprestasinasional.kemdikbud.go.id/labs/uploads/dokumen/lakip-puspresnas-2020.pdf">LAKIP</a>				  	  
-					  <a class="dropdown-item" target="_blank" href="https://pusatprestasinasional.kemdikbud.go.id/labs/uploads/dokumen/renstra-puspresnas-2020.pdf">Rencana Strategis</a>
+					  <a class="dropdown-item" target="_blank" href="https://data-pusatprestasinasional.kemdikbud.go.id/uploads/dokumen/lakip-puspresnas-2020.pdf">LAKIP</a>				  	  
+					  <a class="dropdown-item" target="_blank" href="https://data-pusatprestasinasional.kemdikbud.go.id/uploads/dokumen/renstra-puspresnas-2020.pdf">Rencana Strategis</a>
 					</div>
 				</li>
 				<li class="nav-item">

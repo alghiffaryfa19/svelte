@@ -20,7 +20,7 @@ let rows = [];
 let loading = true;
 import axios from 'axios';
 function changePage(params) {
-    axios.get('https://pusatprestasinasional.kemdikbud.go.id/labs/api/video-all', {
+    axios.get('https://data-pusatprestasinasional.kemdikbud.go.id/api/video-all', {
       params: params
     })
     .then(function (response) {

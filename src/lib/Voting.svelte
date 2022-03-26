@@ -4,7 +4,7 @@
         var Result = new Array();
         var Labels = new Array();
 
-        fetch('https://pusatprestasinasional.kemdikbud.go.id/labs/api/survey_hasil', {
+        fetch('https://data-pusatprestasinasional.kemdikbud.go.id/api/survey_hasil', {
             method: 'GET',
         })
 
@@ -62,7 +62,7 @@
         data.append('kuesioner_id', value)
         data.append('masukan', masukan)
 
-        fetch('https://pusatprestasinasional.kemdikbud.go.id/labs/api/survey/store', {
+        fetch('https://data-pusatprestasinasional.kemdikbud.go.id/api/survey/store', {
             method: 'POST',
             body: data,
         })

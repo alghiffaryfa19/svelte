@@ -18,7 +18,7 @@ let rows = [];
 let loading = true;
 import axios from 'axios';
 function changePage(params) {
-    axios.get('https://pusatprestasinasional.kemdikbud.go.id/labs/api/loadmore/load_data', {
+    axios.get('https://data-pusatprestasinasional.kemdikbud.go.id/api/loadmore/load_data', {
       params: params
     })
     .then(function (response) {

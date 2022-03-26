@@ -8,7 +8,7 @@
 
         try {
         // here we are gonna fetch the single article by id
-            article = await fetch(`https://pusatprestasinasional.kemdikbud.go.id/labs/api/mtn/${params.slug}`);
+            article = await fetch(`https://data-pusatprestasinasional.kemdikbud.go.id/api/mtn/${params.slug}`);
             article = await article.json();
         } catch (e) {
             console.log(e);

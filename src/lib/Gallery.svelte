@@ -1,7 +1,7 @@
 <script>
     import { onMount } from "svelte";
 
-    const apiURL = "https://pusatprestasinasional.kemdikbud.go.id/labs/api/galeri";
+    const apiURL = "https://data-pusatprestasinasional.kemdikbud.go.id/api/galeri";
     let data = [];
     onMount(async function() {
         const response = await fetch(apiURL);

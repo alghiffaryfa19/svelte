@@ -8,7 +8,7 @@
 
         try {
         // here we are gonna fetch the single article by id
-            post = await fetch(`https://pusatprestasinasional.kemdikbud.go.id/labs/api/pengumuman/${params.jenjang}`);
+            post = await fetch(`https://data-pusatprestasinasional.kemdikbud.go.id/api/pengumuman/${params.jenjang}`);
             post = await post.json();
         } catch (e) {
             console.log(e);
@@ -36,7 +36,7 @@
     let loading = true;
     import axios from 'axios';
     function changePage(params) {
-        axios.get(`https://pusatprestasinasional.kemdikbud.go.id/labs/api/loadmore/load_data/${post.jenjang.slug}`, {
+        axios.get(`https://data-pusatprestasinasional.kemdikbud.go.id/api/loadmore/load_data/${post.jenjang.slug}`, {
           params: params
         })
         .then(function (response) {

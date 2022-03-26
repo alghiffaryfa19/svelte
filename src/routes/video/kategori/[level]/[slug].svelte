@@ -8,7 +8,7 @@
 
         try {
         // here we are gonna fetch the single article by id
-            post = await fetch(`https://pusatprestasinasional.kemdikbud.go.id/labs/api/video-kategori/${params.slug}`);
+            post = await fetch(`https://data-pusatprestasinasional.kemdikbud.go.id/api/video-kategori/${params.slug}`);
             post = await post.json();
         } catch (e) {
             console.log(e);
@@ -35,7 +35,7 @@
     let loading = true;
     import axios from 'axios';
     function changePage(params) {
-        axios.get(`https://pusatprestasinasional.kemdikbud.go.id/labs/api/video/${post.level.slug}/${post.slug}`, {
+        axios.get(`https://data-pusatprestasinasional.kemdikbud.go.id/api/video/${post.level.slug}/${post.slug}`, {
         params: params
         })
         .then(function (response) {
